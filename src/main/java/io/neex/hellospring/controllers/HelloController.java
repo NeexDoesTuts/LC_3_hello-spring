@@ -14,4 +14,10 @@ public class HelloController {
     public String index() {
         return "Hello Spring";
     }
+
+    @RequestMapping(value = "goodbye")
+    @ResponseBody
+    public String goodbye() {
+        return "Bye bye";
+    }
 }
